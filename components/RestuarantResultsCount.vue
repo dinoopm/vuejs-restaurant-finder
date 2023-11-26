@@ -1,5 +1,5 @@
 <template>
-    <p class="font-bold"> 34 Restaurants </p>
+    <p class="font-bold text-xl"> 34 Restaurants </p>
 </template>
 
 <script setup>

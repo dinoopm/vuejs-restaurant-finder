@@ -1,7 +1,7 @@
 <template>
   <div class="flex flex-col lg:flex-row">  
     <div class="sidebar basis-2/12 lg:min-h-screen border-r-2">
-        <div class="restuarant-count bg-gray-200 p-5">
+        <div class="restuarant-count bg-gray-300 p-5">
              <RestuarantResultsCount />
         </div>
         <div class="restuarants-list divide-y">
