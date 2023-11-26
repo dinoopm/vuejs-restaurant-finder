@@ -1,3 +1,4 @@
+
 <template>
   <div class="flex flex-col lg:flex-row">  
     <div class="sidebar basis-2/12 lg:min-h-screen border-r-2">
@@ -19,7 +20,10 @@
   </div>
 </template>
 
-<script setup>
+<script setup lang="ts">
+
+import { useRestuarantsStore } from '@/stores/restuarants';
+const store = useRestuarantsStore();
 </script>
 
 <style lang="scss" scoped>
