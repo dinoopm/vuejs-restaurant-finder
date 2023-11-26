@@ -1,6 +1,6 @@
 <template>
-    <header>
-        <h1 class="text-3xl font-bold underline">Restaurant finder</h1>
+    <header class="bg-black p-5">
+        <h1 class="text-white text-3xl font-bold">Restaurant finder</h1>
     </header>
 <main>
     <slot />
