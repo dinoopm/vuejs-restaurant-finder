@@ -8,14 +8,18 @@
                     <p class="flex text-xl pb-5"><img src="../assets/images/phone-icon.svg"><span class="ml-2 self-center">+4917677772323</span></p>
 
                 </div>
-                <div class="basis-4/12"></div>
+                <div class="basis-4/12">
+                    <img src="../assets/images/image.jpeg"  width="600px" />
+                </div>
             </div>
 
             <div class="rating pt-5">
                 <h3 class="text-3xl font-bold pb-5">Review</h3>
 
                 <ul class="list-disc ml-14">
-                   <Review />      
+                    <Review />  
+                    <Review />
+                    <Review />   
                 </ul>
             </div>
         </div>

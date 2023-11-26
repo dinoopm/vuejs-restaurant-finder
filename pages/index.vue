@@ -6,6 +6,11 @@
         </div>
         <div class="restuarants-list divide-y">
             <Restuarant />
+            <Restuarant />
+            <Restuarant />
+            <Restuarant />
+            <Restuarant />
+            <Restuarant />
         </div>
     </div>
     <div class="main-content basis-10/12 lg:min-h-screen">
