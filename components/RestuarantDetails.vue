@@ -16,7 +16,7 @@
         </div>
         <div class="rating pt-5">
             <h3 class="text-3xl font-bold pb-5">Review</h3>
-
+            <p v-if="!selectedBusiness.reviews.length">No reviews yet!</p>
             <ul class="list-disc ml-14" v-for="review in selectedBusiness.reviews">
                 <Review :review ="review" />    
             </ul>
