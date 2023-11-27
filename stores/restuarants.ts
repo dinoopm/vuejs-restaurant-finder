@@ -10,9 +10,9 @@ export const useRestuarantsStore = defineStore('restuarants', {
   actions: {
       async getRestuarants () {
           const data = await $fetch('http://localhost:3000/api/data') as any;
+          this.selectedBusiness = data.data.search.business[0];
           this.total = data.data.search.total;
           this.business = data.data.search.business;
-          this.selectedBusiness = this.business[0];
       }
   }
 })
