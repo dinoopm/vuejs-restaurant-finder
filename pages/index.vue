@@ -18,11 +18,13 @@
 </template>
 
 <script setup>
-
-import { useRestuarantsStore } from '@/stores/restuarants';
+  import { useRestuarantsStore } from '@/stores/restuarants';
   const store = useRestuarantsStore()
   await useAsyncData('restuarants', () => store.getRestuarants())
 </script>
 
 <style lang="scss" scoped>
+  .selected {
+    @apply bg-black
+  }
 </style>
