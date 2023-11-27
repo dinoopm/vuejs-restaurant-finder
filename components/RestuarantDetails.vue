@@ -23,7 +23,11 @@
       </div>
       <div class="basis-5/12">
         <div v-for="photo in selectedBusiness.photos">
-          <img :src="photo" width="500" />
+          <img
+            :src="photo"
+            width="500"
+            :alt="selectedBusiness.name + ' image'"
+          />
         </div>
       </div>
     </div>
