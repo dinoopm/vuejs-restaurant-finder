@@ -24,4 +24,9 @@
 import { useRestuarantsStore } from "@/stores/restuarants";
 const store = useRestuarantsStore();
 await useAsyncData("restuarants", () => store.getRestuarants());
+
+useHead({
+  title: "Nuxt 3 | Restuarant finder",
+  meta: [{ name: "description", content: "Nux 3 restuarant finder app" }],
+});
 </script>
