@@ -15,10 +15,7 @@ export const useRestuarantsStore = defineStore('restuarants', {
           this.business = data.data.search.business || [];
       },
       getSelectedBusiness (id: string) {
-          console.log(id);
           this.selectedBusiness = this.business.filter( (b: {id: string}) => b.id === id)[0];
-
-          console.log(this.selectedBusiness);
       }
   }
 })
