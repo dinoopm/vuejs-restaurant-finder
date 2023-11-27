@@ -1,5 +1,5 @@
 <template>
-    <div class="restuarant-item p-6 hover:bg-sky-300">
+    <div class="restuarant-item p-6 hover:bg-sky-300 cursor-pointer" :class="{selected:id === business.id}">
         <p class="font-bold text-xl">{{ business.name }}</p>
         <p class="text-md flex"><img src="../assets/images/marker-icon.svg"><span>{{ business.location.formatted_address }}</span></p>
     </div>
@@ -7,6 +7,6 @@
 
 <script>
 export default {
-    props: ['business']
+    props: ['business','id']
 }
 </script>

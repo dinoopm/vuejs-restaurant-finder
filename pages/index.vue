@@ -7,7 +7,7 @@
         </div>
         <div class="restuarants-list divide-y">
             <div v-for="business in store.business">
-               <Restuarant :business = 'business' />
+               <Restuarant :business = 'business' :id = 'store.selectedBusiness.id' @click="store.getSelectedBusiness(business.id)" />
             </div>
         </div>
     </div>
@@ -22,6 +22,3 @@
   const store = useRestuarantsStore()
   await useAsyncData('restuarants', () => store.getRestuarants())
 </script>
-
-<style lang="scss" scoped>
-</style>
