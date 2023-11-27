@@ -1,11 +1,9 @@
 <template>
-    <p class="font-bold text-xl"> 34 Restaurants </p>
+    <p class="font-bold text-xl"> {{ total }} Restaurants </p>
 </template>
 
-<script setup>
-
+<script>
+    export default {
+        props: ['total']
+    }
 </script>
-
-<style lang="scss" scoped>
-
-</style>

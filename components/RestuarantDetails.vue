@@ -1,32 +1,32 @@
 <template>
-        <div class="restuarant-details p-14">
-            <div class="restuarant-details flex">
-                <div class="basis-7/12">
-                    <h2 class="text-3xl font-bold underline pb-5">Jim block</h2>
-                    <p class="text-xl font-bold pb-5"><span class="mr-2">Rating:</span>2</p>
-                    <p class="flex text-xl pb-5"><img src="../assets/images/marker-icon.svg"><span class="ml-2 self-center">Billindamm 40, Hamburg</span></p>
-                    <p class="flex text-xl pb-5"><img src="../assets/images/phone-icon.svg"><span class="ml-2 self-center">+4917677772323</span></p>
+    <div class="restuarant-details p-14">
+        <div class="restuarant-details flex">
+            <div class="basis-7/12">
+                <h2 class="text-3xl font-bold underline pb-5">{{ selectedBusiness.name }}</h2>
+                <p class="text-xl font-bold pb-5"><span class="mr-2">Rating: {{ selectedBusiness.rating }}</span></p>
+                <p class="flex text-xl pb-5"><img src="../assets/images/marker-icon.svg"><span class="ml-2 self-center">{{ selectedBusiness?.location?.formatted_address }}</span></p>
+                <p class="flex text-xl pb-5"><img src="../assets/images/phone-icon.svg"><span class="ml-2 self-center">{{ selectedBusiness?.display_phone }}</span></p>
 
-                </div>
-                <div class="basis-5/12">
-                    <img src="../assets/images/image.jpeg"  width="600px" />
-                </div>
             </div>
-
-            <div class="rating pt-5">
-                <h3 class="text-3xl font-bold pb-5">Review</h3>
-
-                <ul class="list-disc ml-14">
-                    <Review />  
-                    <Review />
-                    <Review />   
-                </ul>
+            <div class="basis-5/12">
+                <div v-for="photo in selectedBusiness.photos">
+                    <img :src="photo"  width="500" />
+                </div>
             </div>
         </div>
+
+        <div class="rating pt-5">
+            <h3 class="text-3xl font-bold pb-5">Review</h3>
+
+            <ul class="list-disc ml-14" v-for="review in selectedBusiness.reviews">
+                <Review :review ="review" />    
+            </ul>
+        </div>
+    </div>
 </template>
 
-<script setup>
-
+<script>
+export default {
+    props: ['selectedBusiness']
+}
 </script>
-
-<style lang="scss" scoped></style>
