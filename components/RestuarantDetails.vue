@@ -14,7 +14,6 @@
                 </div>
             </div>
         </div>
-
         <div class="rating pt-5">
             <h3 class="text-3xl font-bold pb-5">Review</h3>
 

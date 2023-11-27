@@ -1,3 +1,7 @@
+body {
+    @apply overflow-hidden;
+}
+
 .selected {
     @apply  bg-sky-300
 }

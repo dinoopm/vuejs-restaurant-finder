@@ -1,8 +1,8 @@
 
 <template>
-  <div class="flex flex-col lg:flex-row">  
-    <div class="sidebar basis-2/12 lg:min-h-screen border-r-2">
-        <div class="restuarant-count bg-gray-300 p-5">
+  <div class="w-full h-screen flex">  
+    <div class=" overflow-y-auto relative block border-r-2">
+        <div class="sticky top-0 bg-gray-300 p-5">
              <RestuarantResultsCount :total = "store.total" />
         </div>
         <div class="restuarants-list divide-y">
@@ -11,7 +11,7 @@
             </div>
         </div>
     </div>
-    <div class="main-content basis-10/12 lg:min-h-screen">
+    <div class="w-3/4 overflow-y-auto relative">
         <RestuarantDetails :selectedBusiness = 'store.selectedBusiness'/>
     </div>
   </div>
