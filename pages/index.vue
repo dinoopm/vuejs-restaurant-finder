@@ -1,6 +1,6 @@
 <template>
   <div class="w-full h-[calc(100vh-80px)] flex">
-    <div class="overflow-y-auto relative block border-r-2">
+    <aside class="overflow-y-auto relative block border-r-2">
       <div class="sticky top-0 bg-gray-300 p-5">
         <RestuarantResultsCount :total="store.total" />
       </div>
@@ -13,10 +13,10 @@
           />
         </div>
       </div>
-    </div>
-    <div class="w-3/4 overflow-y-auto relative">
+    </aside>
+    <main class="w-3/4 overflow-y-auto relative">
       <RestuarantDetails :selectedBusiness="store.selectedBusiness" />
-    </div>
+    </main>
   </div>
 </template>
 
