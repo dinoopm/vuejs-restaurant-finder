@@ -24,7 +24,4 @@
 </script>
 
 <style lang="scss" scoped>
-  .selected {
-    @apply bg-black
-  }
 </style>
