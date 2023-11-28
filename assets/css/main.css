@@ -2,6 +2,10 @@ body {
     @apply overflow-hidden;
 }
 
-.selected {
+.selected{
     @apply  bg-sky-300
+}
+
+.dark .selected {
+    @apply bg-white text-black
 }
