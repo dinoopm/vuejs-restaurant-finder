@@ -1,8 +1,25 @@
 <template>
-  <header class="bg-black p-5">
-    <h1 class="text-white text-3xl font-bold">Restaurant finder</h1>
+  <header class="bg-black p-5 flex">
+    <h1 class="text-white text-3xl font-bold w-3/4">Restaurant finder</h1>
+    <button
+      class="text-white w-1/4 text-right"
+      @click="setColorTheme($colorMode.preference == 'dark' ? 'light' : 'dark')"
+    >
+      <span v-if="$colorMode.value == 'light'">Dark mode</span>
+      <span v-if="$colorMode.value == 'dark'">Light mode</span>
+    </button>
   </header>
   <div>
     <slot />
   </div>
 </template>
+
+<script setup>
+definePageMeta({
+  colorMode: "light",
+});
+
+const setColorTheme = (newTheme) => {
+  useColorMode().preference = newTheme;
+};
+</script>
