@@ -14,7 +14,9 @@
         </div>
       </div>
     </aside>
-    <main class="w-3/4 overflow-y-auto relative">
+    <main
+      class="w-3/4 overflow-y-auto relative dark:bg-blue-950 dark:text-white"
+    >
       <RestuarantDetails :selectedBusiness="store.selectedBusiness" />
     </main>
   </div>

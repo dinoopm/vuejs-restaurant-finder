@@ -1,5 +1,5 @@
 <template>
-  <div class="restuarant-details p-14 dark:bg-blue-950 dark:text-white">
+  <div class="restuarant-details p-14">
     <div class="restuarant-details flex">
       <div class="basis-7/12">
         <h2 class="text-3xl font-bold underline pb-5">
