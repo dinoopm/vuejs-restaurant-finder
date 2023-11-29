@@ -1,6 +1,6 @@
-# Restuarant finder application
+# Restauarant finder application
 
-Restuarant finder application has been build using nuxt 3 and tailwind css
+The restaurant finder application has been build using nuxt 3 and tailwind css
 
 ## Setup
 
