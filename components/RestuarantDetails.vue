@@ -17,7 +17,7 @@
         <p class="flex text-xl pb-5">
           <img src="../assets/images/phone-icon.svg" /><span
             class="ml-2 self-center"
-            >{{ selectedBusiness?.display_phone }}</span
+            >{{ selectedBusiness.display_phone }}</span
           >
         </p>
       </div>
