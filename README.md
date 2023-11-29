@@ -1,6 +1,6 @@
-# Nuxt 3 Minimal Starter
+# Restuarant finder application
 
-Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+Restuarant finder application has been build using nuxt 3 and tailwind css
 
 ## Setup
 
