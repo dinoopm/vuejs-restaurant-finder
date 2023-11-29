@@ -12,10 +12,6 @@
 </template>
 
 <script setup>
-definePageMeta({
-  colorMode: "light",
-});
-
 const setColorTheme = (newTheme) => {
   useColorMode().preference = newTheme;
 };
